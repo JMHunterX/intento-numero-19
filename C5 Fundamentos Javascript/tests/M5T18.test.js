@@ -17,3 +17,7 @@ test('Debe retornar el string "Es vocal", si el valor ingresado lo es', function
   expect(esVocal('o')).toBe('Es vocal');
   expect(esVocal('u')).toBe('Es vocal');
 });
+
+test("No puede matchear más de una vocal", () => {
+  expect(esVocal("ae")).toBe("Dato incorrecto");
+})

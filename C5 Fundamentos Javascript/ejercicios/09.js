@@ -9,6 +9,8 @@ function esNuloOIndefinido(valor) {
   // "texto" ---> false
   // Tu código:
 
+  return valor === null && valor === undefined
+
   if(valor === null ){
     return true
   } if(valor === undefined){

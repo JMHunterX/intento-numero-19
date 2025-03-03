@@ -9,33 +9,37 @@ function esVocal(letra) {
   // "texto largo" ---> "Dato incorrecto"
   // Tu código:
 
-  if(letra.length > 1){
+
+  const vocales = ["a", "e", "i", "o", "u"]
+
+  const esVocal = vocales.includes(letra)
+
+  return esVocal ? "Es vocal" : "Dato incorrecto"
+
+  if(esVocal){
+    return "Es vocal"
+  } else {
     return "Dato incorrecto"
   }
 
-    switch(letra){
+  if (letra.length > 1) {
+    return "Dato incorrecto"
+  }
 
-        case "a":
-        case "e":
-        case "i":
-        case "o":
-        case "uqq":
-        
-        return "Es vocal"
-  
-        default:
-           return "Dato incorrecto"
-          
-        }
+  switch (letra) {
 
+    case "a":
+    case "e":
+    case "i":
+    case "o":
+    case "u":
 
+      return "Es vocal"
 
-      
-    } 
-
-
-
-
+    default:
+      return "Dato incorrecto"
+  }
+}
 
 
 module.exports = esVocal;

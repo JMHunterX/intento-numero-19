@@ -7,6 +7,8 @@ function esPar(num) {
   // 15 ---> false
   // Tu código:
 
+  return num % 2 === 0
+
   if(num % 2 === 0){
       return true
   } else {

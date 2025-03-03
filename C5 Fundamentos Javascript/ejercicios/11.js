@@ -7,6 +7,8 @@ function sonIguales(x, y) {
   // 5, 8 ---> false 
   // Tu código:
 
+  return x === y
+
   if(x == y){
       return true
   } else{
