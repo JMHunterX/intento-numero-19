@@ -5,11 +5,10 @@ function obtenerMayor(x, y) {
   // Tu código:
 
 
-    if(x > y){
-      return x
-    } else {
-      return y
-    }
+  return x > y ? x : y
+
+
+
 
 }
 
