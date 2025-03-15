@@ -12,10 +12,9 @@ function operadoresLogicos(num1, num2, num3) {
     return "Numero 1 es mayor y positivo"
   }
 
-  if(num1 === 0 && num2 === 0 && num3 === 0){
+  if(num1 === 0 && num2 === 0 && num3 === 0)
     return "Error"
-  } 
-
+  
   if(num3 > num1 && num3 > num2){
     return num3 + 1
   }
